@@ -8,18 +8,17 @@ export default function Home() {
   <div className="min-h-screen w-full">
       {/* Seção 1 - Cores laranja e preta com prédios */}
 <section className="w-full min-h-screen bg-gradient-to-r from-orange-500 via-orange-600 to-black">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-10">
-          {/* Texto à esquerda */}
-          <div className="md:w-1/2 text-left text-white">
-            <h1 className="text-3xl md:text-3xl">CONHEÇA NOSSOS </h1>
-            <p className="text-3xl md:text-5xl font-bold" >HOME CLUBS</p>
-            <p className="text-3xl md:text-5xl font-bold">COMPLETOS</p>
-            <p className="relative inline-block mt-4 text-white text-lg bg-black px-5 py-2 pr-20 shadow-md" style={{ clipPath: "polygon(100% 0, 80% 90%, 0 90%, 0 0)"}}>Em Blumenau/SC</p>
+  <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-10">
+    {/* Texto à esquerda */}
+  <div className="md:w-1/2 text-left text-white">
+   <h1 className="text-3xl md:text-3xl">CONHEÇA NOSSOS </h1>
+    <p className="text-3xl md:text-5xl font-bold" >HOME CLUBS</p>
+    <p className="text-3xl md:text-5xl font-bold">COMPLETOS</p>
+    <p className="relative inline-block mt-4 text-white text-lg bg-black px-5 py-2 pr-20 shadow-md" style={{ clipPath: "polygon(100% 0, 80% 90%, 0 90%, 0 0)"}}>Em Blumenau/SC</p>
 
-            <div className="">
-              <p className="mt-5 text-4xl font-bold">Três <span className="text-black">empreendimentos exclusivos</span> para quem busca <span className="text-black">lazer, conforto</span> e <span className="text-black" >qualidade de vida.</span></p>
-            </div>
-            
+      <div className="">
+        <p className="mt-5 text-4xl font-bold">Três <span className="text-black">empreendimentos exclusivos</span> para quem busca <span className="text-black">lazer,conforto</span> e <span className="text-black" >qualidade de vida.</span></p>
+      </div>
           </div>
           {/* Imagem à direita */}
           <div className="relative md:w-1/2 h-[500px] mt-8 md:mt-5">
