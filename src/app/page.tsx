@@ -328,7 +328,7 @@ export default function Home() {
     alt="Imagem do empreendimento"
     layout="fill"  
     objectFit="cover"
-    className="z-0 "
+    className="z-0 opacity-40 "
   />
   <div className="absolute inset-0 bg-gradient-to-l from-transparent md:bg-gradient-to-r md:from-transparent md:to-orange-600"></div>
 
