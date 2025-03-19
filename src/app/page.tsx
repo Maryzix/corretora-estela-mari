@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importando o CSS do AOS
 import Image from "next/image";
-import { Grid, Bed, Flame, BedDouble, Clapperboard, Sun, Footprints, Car } from "lucide-react";
+import {Bed, Flame, BedDouble, Clapperboard, Sun, Footprints, Car } from "lucide-react";
 
 export default function Home() {
   useEffect(() => {
@@ -369,7 +369,7 @@ export default function Home() {
           </div>
           <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
             <div className="bg-gray-800 p-1 rounded-full">
-              <Clapperboard className="w-10 h-10 text-white" />
+              <Bed className="w-10 h-10 text-white" />
             </div>
             <p className="text-sm">Unidades <strong className="font-montserrat">demi-suite</strong></p>
           </div>
