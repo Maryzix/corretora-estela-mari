@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importando o CSS do AOS
 import Image from "next/image";
+import { GiTennisRacket } from 'react-icons/gi';
 import {Bed, Flame, BedDouble, Clapperboard, Sun, Footprints, Car } from "lucide-react";
 
 export default function Home() {
@@ -405,9 +406,15 @@ export default function Home() {
 <section className="w-full bg-gray-800 py-8" data-aos="fade-up">
   <div className="container mx-auto px-4 md:px-8">
     <div className="flex flex-col md:flex-row justify-between items-start mb-8">
-      <div className="md:w-2/3 text-white" data-aos="fade-right">
-        <p className="text-xl md:text-2xl font-swis721 text-center">
-          Viva com conforto no Scire Norden,<span className="font-bold font-montserrat"> localizado no Itoupava Norte.</span> Apartamentos bem planejados e<span className="font-bold font-montserrat"> infraestrutura completa </span> para seu bem-estar, em uma <span className="font-bold font-montserrat">localização estratégica</span>com fácil acesso a tudo o que você e sua família precisam.
+      <div className="md:w-2/3 text-white text-center md:text-left" data-aos="fade-right">
+        <p className="text-xl md:text-2xl font-swis721">
+          Viva com conforto no Scire Norden,
+          <span className="font-bold font-montserrat"> localizado no Itoupava Norte.</span> 
+          Apartamentos bem planejados e
+          <span className="font-bold font-montserrat"> infraestrutura completa </span> 
+          para seu bem-estar, em uma 
+          <span className="font-bold font-montserrat">localização estratégica</span> 
+          com fácil acesso a tudo o que você e sua família precisam.
         </p>
       </div>
 
@@ -484,6 +491,7 @@ export default function Home() {
   </div>
 </section>
 
+
 {/* Seção 7 - descrição do prédio norden */}
 <div className="w-full bg-white flex justify-center items-center">
   <section className="w-full bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400 py-10 md:py-24 min-h-screen">
@@ -530,7 +538,7 @@ export default function Home() {
             <div className="bg-gray-800 p-1 rounded-full">
               <BedDouble className="w-10 h-10 text-white" />
             </div>
-            <p className="text-sm">2 dormitórios sendo<strong className="font-montserrat"> 1 suite</strong></p>
+            <p className="text-sm"> <strong>2 dormitórios </strong>sendo<strong className="font-montserrat"> 1 suite</strong></p>
           </div>
           <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
             <div className="bg-gray-800 p-1 rounded-full">
@@ -539,11 +547,11 @@ export default function Home() {
             <p className="text-sm">Sacada com <strong className="font-montserrat"> churrasqueira</strong></p>
           </div>
           <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
-            <div className="bg-gray-800 p-1 rounded-full">
-              <Flame className="w-10 h-10 text-white" />
-            </div>
-            <p className="text-sm">Sacada com <strong className="font-montserrat"> churrasqueira</strong></p>
-          </div>
+  <div className="bg-gray-800 p-1 rounded-full">
+    <GiTennisRacket className="w-10 h-10 text-white" />
+  </div>
+  <p className="text-sm">Quadra de <strong className="font-montserrat">Beach Tennis</strong></p>
+</div>
         </div>
 
         {/* botão */}
@@ -570,14 +578,14 @@ export default function Home() {
 {/* Seção 8 - final */}
 <section className="min-h-screen bg-gradient-to-tl from-orange-600 to-black md:from-orange-400 md:via-orange-600 md:to-black flex items-center" data-aos="fade-up">
   <div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-2">
-    <div className="md:w-1/2 text-left text-white flex flex-col justify-center mt-2 md:mt-0" data-aos="fade-right">
-      <h1 className="text-xl md:text-2xl font-semibold leading-relaxed mb-3 font-montserrat text-center">
-        Agora que você já conhece nossos Home Clubs, <br />
-        que tal conversar comigo e <br /> ter mais informações?
+    <div className="md:w-1/2 text-center md:text-left text-white flex flex-col justify-center mt-2 md:mt-0" data-aos="fade-right">
+      <h1 className="text-xl md:text-5xl font-semibold leading-relaxed mb-3 font-montserrat">
+        Agora que você já conhece nossos Home Clubs, 
+        que tal conversar comigo e ter mais informações?
       </h1>
 
       <a href="https://wa.me/5547996984421" target="_blank" rel="noopener noreferrer" className="flex justify-center">
-        <button className="text-white font-montserrat py-2 px-5 rounded-full text-2xl border-2 border-white bg-black shadow-inner hover:bg-orange-200 hover:text-black transition duration-400">
+        <button className="text-white font-montserrat py-2 px-5 md:py-4 md:px-10 md:text-3xl rounded-full text-2xl border-2 border-white bg-black shadow-inner hover:bg-orange-200 hover:text-black transition duration-400">
           Saiba Mais!
         </button>
       </a>
@@ -595,6 +603,7 @@ export default function Home() {
     </div>
   </div>
 </section>
+
 
     </>
   );
