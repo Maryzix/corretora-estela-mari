@@ -1,8 +1,8 @@
-"use client"; // Adicionando a diretiva para marcar como Client Component
+"use client";
 
 import { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Importando o CSS do AOS
+import "aos/dist/aos.css";
 import Image from "next/image";
 import { GiTennisRacket } from "react-icons/gi";
 import {
@@ -14,22 +14,43 @@ import {
   Footprints,
   Car,
 } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
   useEffect(() => {
-    // Inicializando o AOS
     AOS.init({
-      duration: 800, // duração das animações
-      easing: "ease-in-out", // tipo de easing
+      duration: 800,
+      easing: "ease-in-out",
     });
   }, []);
 
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
+  const images = [
+    "/imagens/terrace-1.png",
+    "/imagens/terrace-2.png",
+    "/imagens/terrace-3.png",
+    "/imagens/terrace-4.png",
+    "/imagens/terrace-5.png",
+    "/imagens/terrace-6.png",
+    "/imagens/terrace-7.png",
+    "/imagens/terrace-8.png",
+  ];
+
+  const openModal = (src: string) => {
+    setSelectedImage(src);
+    setTimeout(() => setIsVisible(true), 10);
+  };
+
+  const closeModal = () => {
+    setIsVisible(false);
+    setTimeout(() => setSelectedImage(null), 300);
+  };
+
   return (
     <>
-      {/* Seção 1 - HomeClubs completos */}
       <section className="min-h-screen bg-orange-600 md:bg-gradient-to-r md:from-orange-400 md:via-orange-600 md:to-[#402e32] flex items-center p-16">
         <div className="mx-auto flex flex-col justify-between md:flex-row items-center p-4 md:p-10 min-h-screen">
-          {/* Texto à esquerda */}
           <div
             className="md:mr-30 w-full md:w-1/2 text-left text-white"
             data-aos="fade-up"
@@ -74,7 +95,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Imagem colada na margem de baixo */}
           <div
             className="flex justify-center w-full mt-6 md:mt-0 md:w-auto self-end md:self-center"
             data-aos="fade-up"
@@ -92,13 +112,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção 2 - Descrição com logo e imagens arredondadas terrasse */}
-      <section className="w-full bg-gray-800 py-8" data-aos="fade-up">
-        <div className="w-full px-4 md:px-8">
-          {/* Contêiner de texto e logo */}
+      <section className="w-full bg-gray-800" data-aos="fade-up">
+        <div className="w-full p-24">
           <div className="flex flex-col md:flex-row justify-between items-start mb-8">
-            {/* Texto à esquerda (centralizado no mobile) */}
-            <div className="md:w-2/3 text-white text-center md:text-left">
+            <div className="md:w-2/3 text-[#ffe9d0] text-center md:text-left mb-6">
               <p className="text-xl md:text-3xl font-swis721">
                 O Scire Terrasse está no{" "}
                 <span className="font-bold font-montserrat">
@@ -117,82 +134,64 @@ export default function Home() {
                 .
               </p>
             </div>
-            {/* Logo centralizado */}
+
             <div className="md:w-1/3 flex justify-center md:justify-end mt-8 md:mt-0 mx-auto">
               <Image
                 src="/imagens/terrasse-logo.png"
                 alt="Logo Scire Terrasse"
-                width={200} // Ajuste a largura para a resolução ideal
+                width={200}
                 height={200}
                 className="md:w-64"
               />
             </div>
           </div>
 
-          {/* Imagens arredondadas - Responsivo: 2 colunas no mobile, 4 colunas no desktop */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {/* Primeira linha de imagens */}
-            <Image
-              src="/imagens/terrace-1.png"
-              alt="Imagem 1"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-            <Image
-              src="/imagens/terrace-2.png"
-              alt="Imagem 2"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-            <Image
-              src="/imagens/terrace-3.png"
-              alt="Imagem 3"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-            <Image
-              src="/imagens/terrace-4.png"
-              alt="Imagem 4"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-
-            {/* Segunda linha de imagens */}
-            <Image
-              src="/imagens/terrace-5.png"
-              alt="Imagem 5"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-            <Image
-              src="/imagens/terrace-6.png"
-              alt="Imagem 6"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-            <Image
-              src="/imagens/terrace-7.png"
-              alt="Imagem 7"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
-            <Image
-              src="/imagens/terrace-8.png"
-              alt="Imagem 8"
-              width={400} // Ajuste a largura para a resolução ideal
-              height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
-            />
+            {images.map((src, index) => (
+              <Image
+                key={index}
+                src={src}
+                alt={`Imagem ${index + 1}`}
+                width={400}
+                height={400}
+                className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+                onClick={() => openModal(src)}
+              />
+            ))}
           </div>
+
+          {selectedImage && (
+            <div
+              className={`fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50 transition-opacity duration-300 ${
+                isVisible ? "opacity-100" : "opacity-0"
+              }`}
+              onClick={closeModal}
+            >
+              <button
+                onClick={closeModal}
+                className="absolute top-6 right-6 text-white text-3xl font-bold p-2 rounded-full bg-gray-700 hover:bg-gray-600 hover:rotate-90 transition-transform"
+              >
+                ✕
+              </button>
+
+              <div
+                className={`relative w-[80%] transform transition-transform duration-300 ${
+                  isVisible ? "scale-100" : "scale-95"
+                }`}
+              >
+                <Image
+                  src={selectedImage}
+                  alt="Imagem ampliada"
+                  width={1200}
+                  height={1200}
+                  className="w-full max-h-[80vh] object-contain rounded-lg"
+                />
+              </div>
+            </div>
+          )}
         </div>
       </section>
+
       {/* Seção 3 - primeiro empreendimento scrise */}
       <div className="w-full bg-white flex justify-center items-center">
         <section className="w-full bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400 py-10 md:py-24 min-h-screen">
