@@ -27,14 +27,14 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const images = [
-    "/imagens/terrace-1.png",
-    "/imagens/terrace-2.png",
-    "/imagens/terrace-3.png",
-    "/imagens/terrace-4.png",
-    "/imagens/terrace-5.png",
-    "/imagens/terrace-6.png",
-    "/imagens/terrace-7.png",
-    "/imagens/terrace-8.png",
+    "/imagens/terrace1.jpg",
+    "/imagens/terrace2.jpg",
+    "/imagens/terrace3.jpg",
+    "/imagens/terrace4.jpg",
+    "/imagens/terrace5.jpg",
+    "/imagens/terrace6.jpg",
+    "/imagens/terrace7.jpg",
+    "/imagens/terrace8.jpg",
   ];
 
   const openModal = (src: string) => {
@@ -154,7 +154,7 @@ export default function Home() {
                 alt={`Imagem ${index + 1}`}
                 width={400}
                 height={400}
-                className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+                className="transition-transform duration-300 ease-in-out transform hover:scale-115 cursor-pointer"
                 onClick={() => openModal(src)}
               />
             ))}
@@ -184,7 +184,7 @@ export default function Home() {
                   alt="Imagem ampliada"
                   width={1200}
                   height={1200}
-                  className="w-full max-h-[80vh] object-contain rounded-lg"
+                  className="w-full max-h-[80vh] object-contain"
                 />
               </div>
             </div>
@@ -304,17 +304,15 @@ export default function Home() {
 
 
 
-      {/* Seção 4 - Descrição com logo e imagens arredondadas fortaleza */}
-      <section className="bg-gray-800 py-8" data-aos="fade-up">
+      
+      <section className="bg-gray-800 p-24" data-aos="fade-up">
         <div className="px-4">
-          {/* Contêiner de texto e logo */}
           <div
             className="flex flex-col md:flex-row justify-between items-start mb-8"
             data-aos="fade-ri"
           >
-            {/* Texto à esquerda (centralizado no mobile) */}
             <div className="md:w-2/3 text-white text-center md:text-left">
-              <p className="text-xl md:text-3xl font-swis721">
+              <p className="text-xl md:text-3xl font-swis721 text-[#ffe9d0]">
                 O Scire Fortaleza está a poucos minutos do Centro, do terminal
                 rodoviário e do{" "}
                 <span className="font-bold font-montserrat">
@@ -329,7 +327,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Logo centralizado */}
             <div
               className="md:w-1/3 flex justify-center md:justify-end mt-8 md:mt-0 mx-auto"
               data-aos="fade-right"
@@ -337,80 +334,88 @@ export default function Home() {
               <Image
                 src="/imagens/Logo Fortaleza Branco.png"
                 alt="Logo Scire Fortaleza"
-                width={200} // Ajuste a largura para a resolução ideal
+                width={200}
                 height={200}
                 className="md:w-64"
               />
             </div>
           </div>
 
-          {/* Imagens arredondadas - Responsivo: 2 colunas no mobile, 4 colunas no desktop */}
           <div
             className="grid grid-cols-2 md:grid-cols-4 gap-4"
             data-aos="fade-up"
           >
-            {/* Primeira linha de imagens */}
             <Image
-              src="/imagens/fortaleza-1.png"
+              src="/imagens/fortaleza1.jpg"
               alt="Imagem 1"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/fortaleza-2.png"
+              src="/imagens/fortaleza2.jpg"
               alt="Imagem 2"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/fortaleza-3.png"
+              src="/imagens/fortaleza3.jpg"
               alt="Imagem 3"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/fortaleza-4.png"
+              src="/imagens/fortaleza4.jpg"
               alt="Imagem 4"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
 
-            {/* Segunda linha de imagens */}
             <Image
-              src="/imagens/fortaleza-5.png"
+              src="/imagens/fortaleza5.jpg"
               alt="Imagem 5"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/fortaleza-6.png"
+              src="/imagens/fortaleza6.jpg"
               alt="Imagem 6"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/fortaleza-7.png"
+              src="/imagens/fortaleza7.jpg"
               alt="Imagem 7"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/fortaleza-8.png"
+              src="/imagens/fortaleza8.jpg"
               alt="Imagem 8"
-              width={400} // Ajuste a largura para a resolução ideal
+              width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Seção 5 - descrição do prédio fortaleza */}
       <div className="w-full bg-white flex justify-center items-center">
@@ -517,28 +522,35 @@ export default function Home() {
         </section>
       </div>
 
+
+
+
+
+
+
+
       {/* Seção 6 - Descrição com logo e imagens arredondadas norden */}
-      <section className="w-full bg-gray-800 py-8" data-aos="fade-up">
+      <section className="w-full bg-gray-800 p-24" data-aos="fade-up">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-start mb-8">
             <div
               className="md:w-2/3 text-white text-center md:text-left"
               data-aos="fade-right"
             >
-              <p className="text-xl md:text-2xl font-swis721">
+              <p className="text-xl md:text-2xl font-swis721 text-[#ffe9d0]">
                 Viva com conforto no Scire Norden,
                 <span className="font-bold font-montserrat">
                   {" "}
-                  localizado no Itoupava Norte.
+                  localizado no Itoupava Norte.&nbsp;
                 </span>
                 Apartamentos bem planejados e
                 <span className="font-bold font-montserrat">
                   {" "}
                   infraestrutura completa{" "}
                 </span>
-                para seu bem-estar, em uma
+                para seu bem-estar, em uma&nbsp;
                 <span className="font-bold font-montserrat">
-                  localização estratégica
+                  localização estratégica&nbsp;
                 </span>
                 com fácil acesso a tudo o que você e sua família precisam.
               </p>
@@ -561,60 +573,60 @@ export default function Home() {
             data-aos="fade-up"
           >
             <Image
-              src="/imagens/norden-1.png"
+              src="/imagens/norden1.jpg"
               alt="Imagem 1"
               width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
             />
             <Image
-              src="/imagens/norden-2.png"
+              src="/imagens/norden2.jpg"
               alt="Imagem 2"
               width={400}
               height={400}
-              className="norden-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/norden-3.png"
+              src="/imagens/norden3.jpg"
               alt="Imagem 3"
               width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/norden-4.png"
+              src="/imagens/norden4.jpg"
               alt="Imagem 4"
               width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/norden-5.png"
+              src="/imagens/norden5.jpg"
               alt="Imagem 5"
               width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/norden-6.png"
+              src="/imagens/norden6.jpg"
               alt="Imagem 6"
               width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/norden-7.png"
+              src="/imagens/norden7.jpg"
               alt="Imagem 7"
               width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
             <Image
-              src="/imagens/norden-8.png"
+              src="/imagens/norden8.jpg"
               alt="Imagem 8"
               width={400}
               height={400}
-              className="rounded-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="transition-transform duration-300 ease-in-out transform hover:scale-105"
             />
           </div>
         </div>
