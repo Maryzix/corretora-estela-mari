@@ -119,7 +119,7 @@ export default function Home() {
               <p className="text-xl md:text-3xl font-swis721">
                 O Scire Terrasse está no{" "}
                 <span className="font-bold font-montserrat">
-                  bairro Vorstadt
+                  Bairro Vorstadt
                 </span>
                 , uma região estratégica com fácil acesso à BR-470. O bairro
                 oferece{" "}
@@ -192,19 +192,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Seção 3 - primeiro empreendimento scrise */}
-      <div className="w-full bg-white flex justify-center items-center">
-        <section className="w-full bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400 py-10 md:py-24 min-h-screen">
+      <div className="w-full bg-white flex">
+        <section className="w-full bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400">
           <div
-            className="container mx-auto flex flex-col md:flex-row items-center px-4 md:px-0"
+            className="container flex flex-col md:flex-row min-h-screen items-center"
             data-aos="fade-up"
           >
-            {/* Imagem do prédio à esquerda */}
-            <div
-              className="w-full md:w-1/2 relative mb-6 md:mb-10 flex justify-center md:justify-center mt-4 md:mt-10"
-              data-aos="fade-ri"
-            >
-              {/* Imagem para mobile */}
+            <div className="w-full md:w-1/2 relative flex" data-aos="fade-ri">
               <Image
                 src="/imagens/teste2.jpg"
                 alt="Prédio"
@@ -212,50 +206,47 @@ export default function Home() {
                 width={300}
                 height={200}
                 objectFit="contain"
-                className="block md:hidden rounded-xl" // Exibe apenas no mobile
+                className="block md:hidden rounded-xl"
               />
 
-              {/* Imagem para desktop */}
               <Image
                 src="/imagens/section3.png"
                 alt="Prédio"
                 layout="intrinsic"
-                width={900} // Aumenta o tamanho da imagem no desktop
-                height={500} // Ajusta a altura também para um tamanho maior
+                width={900}
+                height={500}
                 objectFit="cover"
                 className="hidden md:block w-full h-full max-w-full transform"
               />
             </div>
 
-            {/* Texto e ícones à direita */}
             <div
-              className="w-full md:w-1/2 text-white md:pl-14 md:pr-10 md:text-left"
+              className="w-full md:w-1/2 text-white flex flex-col justify-center md:text-left h-full" style={{ marginLeft: "-50px" }}
               data-aos="fade-right"
             >
-              <h2 className="text-center text-2xl md:text-3xl mb-4 font-montserrat font-bold">
+              <h2 className="text-center text-2xl md:text-3xl mb-8 font-montserrat font-bold text-[#ffe9d0]">
                 1º EMPREENDIMENTO <br />
-                <span className="text-black font-semibold font-swis721">
+                <span className="text-black font-bold font-swis721">
                   SCIRE DE BLUMENAU
                 </span>{" "}
                 COM ROOFTOP
               </h2>
 
-              {/* Ícones e descrições */}
               <div
-                className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 rounded-md w-full justify-center mx-auto"
+                className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 rounded-md w-full justify-center mx-auto"
                 data-aos="fade-up"
               >
-                <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
+                <div className="flex items-center space-x-2 bg-[#ffe9d0] text-black rounded-full p-2">
                   <div className="bg-gray-800 p-1 rounded-full">
-                    <BedDouble className="w-10 h-10 text-white" />
+                    <BedDouble className="w-10 h-10 p-1 text-white" />
                   </div>
                   <p className="text-sm">
                     Unidades <strong className="font-montserrat">Studio</strong>
                   </p>
                 </div>
-                <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
+                <div className="flex items-center space-x-2 bg-[#ffe9d0] text-black rounded-full p-2">
                   <div className="bg-gray-800 p-1 rounded-full">
-                    <Flame className="w-10 h-10 text-white" />
+                    <Flame className="w-10 h-10 p-1 text-white" />
                   </div>
                   <p className="text-sm">
                     Suite
@@ -265,17 +256,17 @@ export default function Home() {
                     </strong>
                   </p>
                 </div>
-                <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
+                <div className="flex items-center space-x-2 bg-[#ffe9d0] text-black rounded-full p-2">
                   <div className="bg-gray-800 p-1 rounded-full">
-                    <Clapperboard className="w-10 h-10 text-white" />
+                    <Clapperboard className="w-10 h-10 p-1 text-white" />
                   </div>
                   <p className="text-sm">
                     Com <strong className="font-montserrat">Home Cinema</strong>
                   </p>
                 </div>
-                <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
+                <div className="flex items-center space-x-2 bg-[#ffe9d0] text-black rounded-full p-2">
                   <div className="bg-gray-800 p-1 rounded-full">
-                    <Sun className="w-10 h-10 text-white" />
+                    <Sun className="w-10 h-10 p-1 text-white" />
                   </div>
                   <p className="text-sm">
                     Com <strong className="font-montserrat">Solário</strong>
@@ -283,13 +274,12 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Renda e botão */}
               <p
-                className="text-2xl md:text-3xl mb-4 text-center font-swis721"
+                className="text-xl md:text-3xl mb-4 text-center font-swis721 text-[#ffe9d0]"
                 data-aos="fade-up"
               >
-                Renda comprovada a partir de{" "}
-                <strong className="font-montserrat">R$7.200,00</strong>
+                Renda comprovada à partir de{" "}
+                <strong className="font-montserrat">R$ 7.200,00</strong>
               </p>
 
               <div className="flex justify-center" data-aos="fade-up">
@@ -298,18 +288,21 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="text-white font-semibold py-3 px-6 md:py-5 md:px-8 rounded-full text-xl md:text-4xl border hover:bg-orange-400 hover:text-white transition duration-400">
+                  <button className="text-[#ffe9d0] font-semibold mt-5 py-3 px-6 md:py-5 md:px-8 rounded-full text-xl md:text-2xl border hover:bg-orange-400 hover:text-white transition duration-400">
                     Quero conhecer agora
                   </button>
                 </a>
               </div>
 
-              {/* Margem inferior para o botão no mobile */}
               <div className="mb-10 md:mb-0"></div>
             </div>
           </div>
         </section>
       </div>
+
+
+
+
 
       {/* Seção 4 - Descrição com logo e imagens arredondadas fortaleza */}
       <section className="bg-gray-800 py-8" data-aos="fade-up">
