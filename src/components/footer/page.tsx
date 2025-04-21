@@ -18,7 +18,7 @@ export default function Footer() {
           <Link href="https://wa.me/5551985503101" target="_blank">
             <PhoneCall />
           </Link>
-          e<span className="font-bold">Carolina Luiz</span>
+          e<span className="font-bold">Ana Carolina</span>
           <Link href="https://instagram.com/" target="_blank">
             <Instagram />
           </Link>

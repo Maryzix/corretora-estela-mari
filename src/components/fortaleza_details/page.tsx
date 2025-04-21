@@ -47,6 +47,13 @@ export default function Home() {
             className="w-full md:w-1/2 text-white flex flex-col justify-center items-center min-h-screen text-center md:text-left"
             data-aos="fade-right"
           >
+            <h2 className="text-2xl md:text-3xl mb-8 font-montserrat font-bold text-[#ffe9d0] text-center">
+            Lorem ipsum dolor sit amet, consectetur <br />
+              <span className="text-black font-bold font-swis721">
+              adipiscing elit. 
+              </span>{" "}
+              In id nisl eget
+            </h2>
             <div
               className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 rounded-md w-full justify-center mx-auto"
               data-aos="fade-up"
@@ -93,7 +100,7 @@ export default function Home() {
 
             <div className="flex justify-center">
               <a
-                href="https://wa.me/5547996984421"
+                href="https://wa.me/5547996984421/?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20empreendimento%20terrasse%21%20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
