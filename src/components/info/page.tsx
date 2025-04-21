@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="min-h-screen bg-gradient-to-tl from-orange-600 to-black md:from-orange-400 md:via-orange-600 md:to-black flex items-center"
+        className="min-h-screen bg-gray-800 p-6 md:p-24 flex items-center"
         data-aos="fade-up"
       >
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-2">
@@ -24,7 +24,7 @@ export default function Home() {
             className="md:w-1/2 text-center md:text-left text-white flex flex-col justify-center mt-2 md:mt-0"
             data-aos="fade-right"
           >
-            <h1 className="text-xl md:text-3xl font-semibold leading-relaxed mb-3 font-montserrat">
+            <h1 className="text-xl md:text-4xl font-semibold leading-relaxed mb-5 pr-6 font-montserrat">
               Agora que você já conhece nossos Home Clubs, que tal conversar
               comigo e ter mais informações?
             </h1>
@@ -33,10 +33,9 @@ export default function Home() {
               href="https://wa.me/5547996984421"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex justify-center"
             >
-              <button className="text-white font-montserrat py-2 px-5 md:py-4 md:px-10 md:text-3xl rounded-full text-2xl border-2 border-white bg-black shadow-inner hover:bg-orange-200 hover:text-black transition duration-400">
-                Saiba Mais!
+              <button className="text-[#402e32] bg-[#ffe9d0] font-semibold mt-5 py-3 px-6 md:py-5 md:px-8 rounded-full text-xl md:text-2xl hover:bg-[#402e32] hover:text-[#ffe9d0] transition duration-400">
+                Entre em contato comigo pelo WhatsApp e saiba mais!
               </button>
             </a>
           </div>

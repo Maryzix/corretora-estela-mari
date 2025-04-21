@@ -14,7 +14,7 @@ export default function Header() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-orange-600 md:bg-gradient-to-r md:from-orange-400 md:via-orange-600 md:to-[#402e32] flex items-center p-16">
+    <section className="min-h-screen bg-orange-600 md:bg-gradient-to-r md:from-orange-400 md:via-orange-600 md:to-[#402e32] flex items-center md:p-16 p-6">
       <div className="mx-auto flex flex-col justify-between md:flex-row items-center p-4 md:p-10 min-h-screen">
         <div
           className="md:mr-30 w-full md:w-1/2 text-left text-white"

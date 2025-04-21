@@ -16,12 +16,12 @@ export default function Home() {
 
   return (
     <div className="w-full bg-white flex">
-      <section className="w-full bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400">
+      <section className="w-full bg-gradient-to-r from-orange-400 via-orange-600 to-orange-400 p-6 md:p-0">
         <div
           className="container flex flex-col md:flex-row min-h-screen"
           data-aos="fade-up"
         >
-          <div className="w-full md:w-1/2 relative flex" data-aos="fade-ri">
+          <div className="w-full md:w-1/2 relative flex justify-center md:justify-left" data-aos="fade-ri">
             <Image
               src="/imagens/section5.jpeg"
               alt="Prédio"
@@ -48,7 +48,7 @@ export default function Home() {
             data-aos="fade-right"
           >
             <div
-              className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 rounded-md w-full justify-center mx-auto"
+              className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 rounded-md w-full justify-center mx-auto"
               data-aos="fade-up"
             >
               <div className="flex items-center space-x-2 bg-white text-black rounded-full p-2">
@@ -97,8 +97,8 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="text-white font-semibold py-3 px-6 md:py-5 md:px-8 rounded-full text-xl md:text-4xl border-2 hover:bg-orange-400 hover:text-white transition duration-400">
-                  Quero conhecer agora!
+                <button className="text-[#ffe9d0] bg-[#402e32] font-semibold mt-5 py-3 px-6 md:py-5 md:px-8 rounded-full text-xl md:text-2xl hover:bg-[#ffe9d0] hover:text-[#402e32] transition duration-400">
+                  Quero conhecer agora
                 </button>
               </a>
             </div>

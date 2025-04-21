@@ -40,7 +40,7 @@ export default function Terrasse() {
   return (
     <>
       <section className="w-full bg-gray-800" data-aos="fade-up">
-        <div className="w-full p-24">
+        <div className="md:p-24 p-6">
           <div className="flex flex-col md:flex-row justify-between items-start mb-8">
             <div className="md:w-2/3 text-[#ffe9d0] text-center md:text-left mb-6">
               <p className="text-xl md:text-3xl font-swis721">
