@@ -100,7 +100,7 @@ export default function Home() {
 
             <div className="flex justify-center">
               <a
-                href="https://wa.me/5547996984421/?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20empreendimento%20terrasse%21%20"
+                href="https://wa.me/5547996984421/?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20o%20empreendimento%20Fortaleza%21%20"
                 target="_blank"
                 rel="noopener noreferrer"
               >
