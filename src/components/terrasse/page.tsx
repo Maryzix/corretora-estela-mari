@@ -9,7 +9,7 @@ import { useState } from "react";
 export default function Terrasse() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 300,
       easing: "ease-in-out",
     });
   }, []);
@@ -39,9 +39,9 @@ export default function Terrasse() {
 
   return (
     <>
-      <section className="w-full bg-gray-800" data-aos="fade-up">
+      <section className="w-full bg-gray-800">
         <div className="md:p-24 p-6">
-          <div className="flex flex-col md:flex-row justify-between items-start mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-start mb-8 " data-aos="fade-ri">
             <div className="md:w-2/3 text-[#ffe9d0] text-center md:text-left mb-6">
               <p className="text-xl md:text-3xl font-swis721">
                 O Scire Terrasse está no{" "}

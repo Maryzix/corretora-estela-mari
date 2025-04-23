@@ -39,7 +39,7 @@ export default function Norden() {
 
   return (
     <>
-      <section className="w-full bg-gray-800 p-6 md:p-24" data-aos="fade-up">
+      <section className="w-full bg-gray-800 p-6 md:p-24">
         <div className="px-4">
           <div className="flex flex-col md:flex-row justify-between items-start mb-8">
             <div
