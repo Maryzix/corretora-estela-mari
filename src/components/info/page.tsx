@@ -16,11 +16,22 @@ export default function Home() {
   return (
     <>
     <section className="min-h-screen bg-gray-800 p-6 md:p-24 flex items-center">
-  <div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-2">
-    <div
-      className="md:w-1/2 text-center md:text-left text-white flex flex-col justify-center mt-2 md:mt-0"
-      data-aos="fade-right"
-    >
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center p-2">
+        <div
+          className="md:w-1/2 text-center md:text-left text-white flex flex-col justify-center mt-2 md:mt-0"
+          data-aos="fade-right"
+        >
+        {/* Logo Mobile */}
+        <div className="md:hidden flex justify-center">
+          <Image
+            src="/imagens/logo-estela-branca.png"
+            alt="Logo Empresária Mobile"
+            width={260}
+            height={160}
+            className="w-44"
+          />
+        </div>
+
       <h1 className="text-xl md:text-4xl font-semibold leading-relaxed mb-5 font-montserrat">
         Agora que você já conhece nossos Home Clubs, que tal conversar
         comigo e ter mais informações?
@@ -36,16 +47,16 @@ export default function Home() {
         </button>
       </a>
 
-      
+      {/* Logo Desktop */}
       <div className="mt-8 hidden md:flex justify-center pr-16">
         <Image
-          src="/imagens/logo-estela-branca.png" 
+          src="/imagens/logo-estela-branca.png"
           alt="Logo Empresária"
           layout="intrinsic"
-          width={350} 
-          height={350} 
+          width={350}
+          height={350}
           objectFit="contain"
-          className="block" 
+          className="block"
         />
       </div>
     </div>
