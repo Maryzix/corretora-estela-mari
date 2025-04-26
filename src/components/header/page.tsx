@@ -67,9 +67,9 @@ export default function Header() {
           <p className="font-swis721 font-bold">
             Três{" "}
             <span className="text-[#402e32] font-montserrat font-bold">
-              empreendimentos exclusivos
+              empreendimentos exclusivos,
             </span>{" "}
-            para quem busca
+            ideais para quem valoriza
             <span className="text-[#402e32] font-montserrat font-bold">
               {" "} lazer, conforto{" "}
             </span>{" "}
