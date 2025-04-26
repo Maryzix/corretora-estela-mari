@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Estela Mari Empreendimentos",
+  title: "Empreendimentos em Blumenau/SC",
   description: "Blumenau/SC",
 };
 
