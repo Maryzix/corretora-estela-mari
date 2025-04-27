@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Empreendimentos em Blumenau/SC",
   description: "Blumenau/SC",
+  icons: {
+    icon: "/SLOGAN.svg", 
+  },
 };
 
 export default function RootLayout({
