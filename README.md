@@ -8,7 +8,7 @@ This is a website created by **Mary Lindsen**.
 
 Check out the live website:
 
-https://estela-website-psi.vercel.app/
+https://corretora-estela-mari.vercel.app/
 
 🚀 This is the actual live version of the site, ready for your use!
 
