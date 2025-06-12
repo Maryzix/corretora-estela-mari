@@ -17,7 +17,7 @@ https://estela-website-psi.vercel.app/
 
 This project uses the following languages:
 
-- **JavaScript**: 97.8%
+- **TypeScript**: 97.8%
 - **CSS**: 2.2%
 - **HTML5**: The structure of the web pages 🏗️
 - **Tailwind CSS**: For quick and responsive styling ⚡
@@ -25,8 +25,7 @@ This project uses the following languages:
 - **Next.js**: Framework for React with server-side rendering 🔥
 - **Node.js**: JavaScript runtime environment for the backend 🌐
 - **Firebase**: For real-time database integration 🔥
-- **Bootstrap**: For responsive and mobile-first layouts 📱
-- **Figma**: For design and prototyping 🎨
+- **Photoshop**: For design and prototyping 🎨
 - **Git**: Version control to track changes 🛠️
 
 ---
