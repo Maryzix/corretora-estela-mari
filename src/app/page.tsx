@@ -7,6 +7,7 @@ import Norden from "@/components/norden/page";
 import Norden_Details from "@/components/norden_details/page";
 import Info from "@/components/info/page";
 import Footer from "@/components/footer/page";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
